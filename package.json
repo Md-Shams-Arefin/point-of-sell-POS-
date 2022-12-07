@@ -1,0 +1,20 @@
+{
+  "name": "pos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client":"npm run start --prefix my-app",
+    "server":"npm run start:dev --prefix server",
+    "dev":"concurrently \"npm run server\" \"npm run client\" ",
+    "install:client": "npm install --prefix my-app",
+    "install:server": "npm install --prefix server",
+    "install:all": "npm install && npm install --prefix my-app && npm install --prefix server"
+  },
+  "author": "Md. Shamsul Arefin",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}

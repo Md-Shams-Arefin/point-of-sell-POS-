@@ -1,0 +1,13 @@
+### Get All Customers
+GET http://localhost:5000/customers
+
+
+###Create Customer
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+    "name":"Jim",
+    "age":20,
+    "gender":"male"
+}

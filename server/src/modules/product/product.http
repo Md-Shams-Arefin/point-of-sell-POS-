@@ -1,0 +1,13 @@
+### Get All Products
+GET http://localhost:5000/products
+
+
+###Create Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name":"Guava",
+    "code": 105,
+    "cost": 45
+}
